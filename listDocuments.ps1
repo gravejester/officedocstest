@@ -1,3 +1,5 @@
+# Read metadata about the documents from the raw xml data
+
 Get-ChildItem -Path '.\DocumentsUnpacked' -Directory | ForEach-Object {
     if (Test-Path -Path "$($_.FullName)\docProps\core.xml") {
         $coreXml = Get-Content -Path "$($_.FullName)\docProps\core.xml" | ConvertTo-Xml

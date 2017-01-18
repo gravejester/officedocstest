@@ -1,3 +1,6 @@
+# unpack the document files into the DocumentsUnpacked folder
+
+
 Get-ChildItem -Path '.\Documents' -File | ForEach-Object {
     $documentName = $_.BaseName
     if (-not (Test-Path -Path ".\DocumentsUnpacked\$($documentName)")) {

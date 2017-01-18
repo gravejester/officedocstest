@@ -1,3 +1,5 @@
+# Re-pack the documents into proper Office documents again
+
 if (-not (Test-Path '.\Documents')) {
     $documentsFolder = New-Item -Path '.\Documents' -ItemType Directory -Force
 }
